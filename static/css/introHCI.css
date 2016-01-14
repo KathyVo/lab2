@@ -6,7 +6,7 @@
 /* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
 	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
-	color: #CC00AA;
+	color: rgb(255, 255, 255);
 }
 
 /* this style exists to make it obvious that you've successfully linked
@@ -14,40 +14,73 @@
 body {
      border: 1px dotted gray;
      padding: 20px;
+     background: rgb(104, 94, 110);
+     color: rgb(255, 255, 255);
 }
 
 .jumbotron {
 	position: relative;
 	background: none;
+     margin-left: 0px;
 }
 
 .jumbotron:after {
      content:"";
-     background: url("http://lorempixel.com/1140/283");
-     opacity: 0.2;
+     background: rgb(201, 82, 255);
+     opacity: 0.7;
      top: 0;
      left: 0;
      bottom: 0;
      right: 0;
+     margin-left: -50px;
+     margin-right: -50px;
      position: absolute;
      z-index: -1;	
 }
 
 .project {
      margin-left: 20px;
+     margin-bottom: 50px;
      background-color: #deebf7;
-     padding: 20px;
-     width: 525px;
+     width: 300px;
+     height: 150px;
+     float: left;
 }
+
 
 .project p {
      font-variant: small-caps;
 }
 
+
 p {
-     fontvariant: small-caps;
+     font-variant: small-caps;
 }
 
 #project1 {
      font-variant: small-caps;
+     background: url("http://assets1.bigthink.com/system/idea_thumbnails/47249/headline/standing%20in%20line.jpg?1345402893");
+}
+
+span {
+
+     color: black;
+}
+
+#project1 img {
+     z-index: 0;
+}
+
+#overlay:hover {
+     opacity: 1;
+}
+
+#project2 {
+     background: url("http://ecx.images-amazon.com/images/I/911adMEd8VL._SY355_.jpg");
+
+#overlay {
+     background: rgba(255, 255, 255, 0.8);
+     opacity: 0;
+     height: 150px;
+     width: 300px;
 }
